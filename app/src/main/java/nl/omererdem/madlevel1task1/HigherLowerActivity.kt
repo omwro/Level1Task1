@@ -23,4 +23,10 @@ class HigherLowerActivity : AppCompatActivity() {
     private fun updateUI() {
         binding.lastThrow.text = getString(R.string.last_throw, lastThrow)
     }
+
+    private fun rollDice() {
+        lastThrow = currentThrow
+        currentThrow = (1..6).random()
+        updateUI()
+    }
 }
