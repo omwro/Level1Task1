@@ -4,6 +4,6 @@
     <string name="lower">LOWER</string>
     <string name="equals">EQUALS</string>
     <string name="higher">HIGHER</string>
-    <string name="last_throw">Last Throw:</string>
+    <string name="last_throw">Last Throw: %d</string>
     <string name="dice_desc">image of a dice</string>
 </resources>
