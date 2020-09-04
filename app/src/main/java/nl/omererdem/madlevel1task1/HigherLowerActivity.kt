@@ -18,6 +18,15 @@ class HigherLowerActivity : AppCompatActivity() {
     }
 
     private fun initViews() {
+        binding.lowerBtn.setOnClickListener {
+            onLowerClick()
+        }
+        binding.equalsBtn.setOnClickListener {
+            onEqualClick()
+        }
+        binding.higherBtn.setOnClickListener {
+            onHigherClick()
+        }
         updateUI()
     }
 
