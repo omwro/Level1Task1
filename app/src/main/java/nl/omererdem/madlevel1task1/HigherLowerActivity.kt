@@ -23,6 +23,19 @@ class HigherLowerActivity : AppCompatActivity() {
 
     private fun updateUI() {
         binding.lastThrow.text = getString(R.string.last_throw, lastThrow)
+        if (currentThrow == 1) {
+            binding.image.setImageResource(R.drawable.dice1)
+        } else if (currentThrow == 2) {
+            binding.image.setImageResource(R.drawable.dice2)
+        } else if (currentThrow == 3) {
+            binding.image.setImageResource(R.drawable.dice3)
+        } else if (currentThrow == 4) {
+            binding.image.setImageResource(R.drawable.dice4)
+        } else if (currentThrow == 5) {
+            binding.image.setImageResource(R.drawable.dice5)
+        } else if (currentThrow == 6) {
+            binding.image.setImageResource(R.drawable.dice6)
+        }
     }
 
     private fun rollDice() {
